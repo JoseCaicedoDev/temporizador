@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/index.js"></script>
+    <title>Temporizador de Ejercicio</title>
+  </head>
+  <body>
+    <h2>Establezca los intervalos de ejercicio y descanso</h2>
+    <div class="controls">
+      <label for="excercise">Intervalos: </label>
+      <input
+        id="excercise"
+        class="slider"
+        name="excercise"
+        type="range"
+        min="0"
+        max="120"
+        value="60"
+      />
+      <p class="timer timeExcersice">60 s</p>
+      <label for="break">Descanso: </label>
+      <input
+        id="break"
+        class="slider"
+        name="break"
+        type="range"
+        min="0"
+        max="60"
+        value="15"
+      />
+      <p class="timer timeBreak">15 s</p>
+    </div>
+    <div class="controls__time">
+      <p class="time">00</p>
+      <button class="btn btn_line">iniciar / pausar</button>
+    </div>
+    <footer>
+      <p>By</p>
+      <a href="https://www.linkedin.com/in/jose-caicedo/"
+        ><img src="image/JC_negro.png" alt="logo del desarrollador"
+      /></a>
+    </footer>
+  </body>
+</html>
